@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0A0A0A">
+    <title>About | Royal Empire Hotel</title>
+    <meta name="description" content="Discover the warm hospitality and dining experience at Royal Empire Hotel.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('style_css') }}">
+</head>
+<body>
+    {% include "_header.html" %}
+    <main class="content-page" id="about">
+        <div class="container content-page-inner">
+            <p class="content-page-kicker">Our Story</p>
+            <h1>A Place to Dine, Unwind &amp; Belong</h1>
+            <p>At Royal Empire Hotel, we bring people together over delicious food, refreshing drinks and genuine
+                hospitality. Whether you are sharing a meal with family, catching up with friends or celebrating a
+                special occasion, our team is here to make every visit feel memorable.</p>
+            <p>From comforting favourites to carefully prepared signature dishes, every detail is designed to make
+                you feel welcome. Come for the food, stay for the warm atmosphere.</p>
+            <a class="btn btn-solid" href="{{ url_for('menu') }}">Explore Our Menu <span aria-hidden="true">&rarr;</span></a>
+        </div>
+    </main>
+    {% include "_footer.html" %}
+    <script src="{{ url_for('script_js') }}"></script>
+</body>
+</html>
